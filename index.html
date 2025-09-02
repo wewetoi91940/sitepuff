@@ -3,35 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon site à deux</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Produit qui tourne</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f5f5f5;
+    }
+
+    .produit {
+      width: 250px; /* taille de ton produit */
+      animation: rotation 5s linear infinite;
+    }
+
+    @keyframes rotation {
+      from {
+        transform: rotateY(0deg);
+      }
+      to {
+        transform: rotateY(360deg);
+      }
+    }
+  </style>
 </head>
 <body>
-
-  <header>
-    <h1>Bienvenue sur notre site 🚀</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Produits</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <h2>Notre premier produit</h2>
-      <p>Description rapide du produit.</p>
-      <button onclick="salut()">Clique-moi</button>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Notre Site à Deux</p>
-  </footer>
-
-  <script src="script.js"></script>
+  <img src="puggi.jpg" alt="Produit" class="produit">
 </body>
 </html>
+
 
