@@ -19,19 +19,19 @@ header {
 nav a {
   color: #fff;
   margin: 0 10px;
-  text-decoration: none;
-}
-
+  text-decoration: 
+  
 /* Produit mis en avant */
 .featured-product {
   display: flex;           
   justify-content: center; /* centre horizontalement */
   align-items: center;     /* centre verticalement si nécessaire */
   padding: 30px;
-  background-color: #fff;
+  background-color: transparent; /* <-- plus de fond blanc */
   margin-bottom: 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* un peu d’ombre pour détacher du fond */
+  color: white; /* texte lisible */
 }
 
 /* Grille des autres produits */
