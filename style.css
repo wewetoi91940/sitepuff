@@ -1,10 +1,11 @@
 /* Fond du site */
 body {
-  background: url("luxe-abstrait-flou-gris-fonce-gradient-noir_1258-53740.jpg") no-repeat center center fixed;
-  background-size: cover;
+  background: url("fond.jpg") no-repeat center center fixed;
+  background-size: cover;  /* l’image s’adapte à l’écran */
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  height: 100vh; /* force le fond à prendre toute la hauteur */
 }
 
 /* Header */
