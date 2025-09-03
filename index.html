@@ -3,33 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Produit qui tourne</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: #f5f5f5;
-    }
-
-    .produit {
-      width: 250px; /* taille de ton produit */
-      animation: rotation 5s linear infinite;
-    }
-
-    @keyframes rotation {
-      from {
-        transform: rotateY(0deg);
-      }
-      to {
-        transform: rotateY(360deg);
-      }
-    }
-  </style>
+  <title>Ma Boutique</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.162.1/build/three.min.js"></script>
+
+
 <body>
-  <img src="puggi.jpg" alt="Produit" class="produit">
+
+  <header>
+    <h1>Ma Boutique</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="produits.html">Produits</a>
+      <a href="panier.html">Panier</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+   <section class="featured-product">
+    <div class="product">
+      <canvas id="puff3D" width="300" height="300"></canvas>>
+      <h2>Puff 30K (Mise en avant)</h2>
+      <p>30,00 €</p>
+      <button>Ajouter au panier</button>
+    </div>
+  </section>
+  <main>
+    <h2>Produits en vedette</h2>
+    <div class="produits">
+      <div class="produit">
+        <img src="images/puff1.png" alt="Puff 9K">
+        <h3>Puff 9K</h3>
+        <p>30,00 €</p>
+        <button>Ajouter au panier</button>
+      </div>
+      <div class="produit">
+        <img src="images/puff2.png" alt="Puff 30K">
+        <h3>Puff 30K</h3>
+        <p>50,00 €</p>
+        <button>Ajouter au panier</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Ma Boutique - Tous droits réservés</p>
+  </footer>
+</body>
+
+ <script>
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
+    camera.position.z = 3;
+
+    const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('puff3D'), alpha: true });
+    renderer.setSize(300, 300);
+
+    // Objet 3D basique (cube)
+    const geometry = new THREE.BoxGeometry(1, 1, 1);
+    const material = new THREE.MeshNormalMaterial();
+    const cube = new THREE.Mesh(geometry, material);
+    scene.add(cube);
+
+    function animate() {
+      requestAnimationFrame(animate);
+      cube.rotation.y += 0.01;
+      cube.rotation.x += 0.005;
+      renderer.render(scene, camera);
+    }
+    animate();
+  </script>
+
 </body>
 </html>
 
