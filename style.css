@@ -35,21 +35,22 @@ nav a {
 }
 
 /* Grille des autres produits */
-.produits {
-  display: flex;           
-  justify-content: center; /* centre horizontalement */
-  gap: 20px;               
-  flex-wrap: wrap;         /* passe à la ligne si écran petit */
-  padding: 20px;
+.produit {
+  border: 1px solid rgba(255,255,255,0.2); /* bordure légère et transparente */
+  background-color: transparent; /* pas de fond blanc */
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  color: white; /* pour que le texte soit lisible sur ton fond */
 }
 
 .produit {
-  background-color: #fff;
-  padding: 15px;
+  border: 1px solid rgba(255,255,255,0.2); /* bordure légère et transparente */
+  background-color: transparent; /* pas de fond blanc */
+  padding: 10px;
   text-align: center;
   width: 200px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  color: white; /* pour que le texte soit lisible sur ton fond */
 }
 
 .produit img {
