@@ -51,7 +51,7 @@ nav a {
   display: flex;
   gap: 40px;             /* espace entre les produits */
   justify-content: center; /* centre toute la grille */
-  max-width: 400px;       /* largeur totale de la grille */
+  max-width: 500px;       /* largeur totale de la grille */
   margin: 0 auto;         /* centre la grille sur la page */
   flex-wrap: wrap;
   padding: 20px;
