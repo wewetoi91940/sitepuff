@@ -50,7 +50,7 @@ nav a {
 .produits {
   display: flex;
   gap: 40px;           /* espace entre les produits */
-  justify-content: center; /* centre la grille sur la page */
+  justify-content: space-between; /* centre la grille sur la page */
   flex-wrap: wrap;      /* passe à la ligne si trop petit écran */
   padding: 20px;
 }
