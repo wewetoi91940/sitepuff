@@ -47,13 +47,11 @@ nav a {
   text-align: center;
 }
 
-/* Grille des autres produits */
 .produits {
   display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-  justify-content: space-between; /* centre toute la grille */
-  max-width: 500px;
+  gap: 40px;           /* espace entre les produits */
+  justify-content: center; /* centre la grille sur la page */
+  flex-wrap: wrap;      /* passe à la ligne si trop petit écran */
   padding: 20px;
 }
 
@@ -62,7 +60,7 @@ nav a {
   background-color: transparent;
   padding: 10px;
   text-align: center;
-  width: 200px;
+  width: 180px;       /* un peu plus petit si tu veux que ça rentre bien */
   color: white;
 }
 
