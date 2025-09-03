@@ -1,11 +1,10 @@
 /* Fond du site */
 body {
   background: url("luxe-abstrait-flou-gris-fonce-gradient-noir_1258-53740.jpg") no-repeat center center fixed;
-  background-size: cover;  /* l’image s’adapte à l’écran */
+  background-size: cover;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  height: 100vh; /* force le fond à prendre toute la hauteur */
 }
 
 /* Header */
@@ -19,38 +18,51 @@ header {
 nav a {
   color: #fff;
   margin: 0 10px;
-  text-decoration: 
-  
+  text-decoration: none; /* corrigé */
+}
+
+/* Logo */
+.logo {
+  max-height: 60px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 /* Produit mis en avant */
 .featured-product {
   display: flex;           
   justify-content: center; /* centre horizontalement */
-  align-items: center;     /* centre verticalement si nécessaire */
+  align-items: center;     /* centre verticalement */
   padding: 30px;
-  background-color: transparent; /* <-- plus de fond blanc */
+  background-color: transparent; /* pas de fond blanc */
   margin-bottom: 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* un peu d’ombre pour détacher du fond */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   color: white; /* texte lisible */
 }
 
-/* Grille des autres produits */
-.produit {
-  border: 1px solid rgba(255,255,255,0.2); /* bordure légère et transparente */
-  background-color: transparent; /* pas de fond blanc */
-  padding: 10px;
+.featured-product .product {
+  max-width: 300px; /* largeur limitée pour le produit mis en avant */
   text-align: center;
-  width: 200px;
-  color: white; /* pour que le texte soit lisible sur ton fond */
+}
+
+/* Grille des autres produits */
+.produits {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center; /* centre toute la grille */
+  padding: 20px;
 }
 
 .produit {
-  border: 1px solid rgba(255,255,255,0.2); /* bordure légère et transparente */
-  background-color: transparent; /* pas de fond blanc */
+  border: 1px solid rgba(255,255,255,0.2);
+  background-color: transparent;
   padding: 10px;
   text-align: center;
   width: 200px;
-  color: white; /* pour que le texte soit lisible sur ton fond */
+  color: white;
 }
 
 .produit img {
@@ -65,10 +77,10 @@ button {
   border: none;
   cursor: pointer;
   border-radius: 8px;
+  transition: transform 0.2s;
 }
-.logo {
-  max-height: 60px; /* ajuste la taille du logo */
-  width: auto;
-  display: block;
-  margin: 0 auto; /* centre horizontalement */
+
+button:hover {
+  transform: scale(1.05);
+  background: gray;
 }
