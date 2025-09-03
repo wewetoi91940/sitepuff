@@ -1,1 +1,66 @@
-caca
+/* Fond du site */
+body {
+  background: url("fond.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background: #111;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Produit mis en avant */
+.featured-product {
+  display: flex;           
+  justify-content: center; /* centre horizontalement */
+  align-items: center;     /* centre verticalement si nécessaire */
+  padding: 30px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Grille des autres produits */
+.produits {
+  display: flex;           
+  justify-content: center; /* centre horizontalement */
+  gap: 20px;               
+  flex-wrap: wrap;         /* passe à la ligne si écran petit */
+  padding: 20px;
+}
+
+.produit {
+  background-color: #fff;
+  padding: 15px;
+  text-align: center;
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.produit img {
+  max-width: 100%;
+}
+
+/* Boutons */
+button {
+  background: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
