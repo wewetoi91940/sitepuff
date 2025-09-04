@@ -83,7 +83,7 @@ nav a {
 }
 .texte-apres-produits {
   text-align: center;
-  color: red;        /* ✅ Texte rouge */
+  color: #b30000;        /* ✅ Texte rouge */
   margin-top: 40px;  /* espace avec les produits */
   font-size: 18px;   /* taille lisible */
 }
