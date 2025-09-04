@@ -95,15 +95,17 @@ nav a {
 }
 
 .info-bloc {
-  flex: 1 1 200px; /* min 200px, peut grandir pour remplir l'espace */
-  max-width: 220px;
+  flex: 0 0 45%; /* chaque bloc prend 45% de la largeur */
+  max-width: 220px; /* limite la taille pour pas trop étirer */
   background-color: rgba(0,0,0,0.4);
   padding: 15px;
   border-radius: 10px;
-  color: #b71c1c; /* rouge foncé */
+  color: #8B0000; /* rouge foncé */
   text-align: center;
-  margin: 10px;
+  margin: 10px 5px; /* petit espace entre les colonnes et lignes */
 }
+
+/* On retire le media query pour mobile pour gard
 
 @media screen and (max-width: 600px) {
   .info-bloc {
