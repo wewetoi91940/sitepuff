@@ -87,23 +87,29 @@ nav a {
   margin-top: 40px;  /* espace avec les produits */
   font-size: 18px;   /* taille lisible */
 }
-.info-jeunes {
+..info-jeunes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 20px;
-  margin: 40px auto;
-  max-width: 1000px;
-  text-align: center;
+  justify-content: center;
 }
 
 .info-bloc {
-  background-color: rgba(0, 0, 0, 0.3); /* léger fond pour détacher du site */
-  padding: 20px;
-  border-radius: 12px;
-  color: #b30000; /* rouge foncé qui va avec ton fond */
-  flex: 1 1 220px; /* responsive, minimum 220px par bloc */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  flex: 1 1 200px; /* min 200px, peut grandir pour remplir l'espace */
+  max-width: 220px;
+  background-color: rgba(0,0,0,0.4);
+  padding: 15px;
+  border-radius: 10px;
+  color: #b71c1c; /* rouge foncé */
+  text-align: center;
+  margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .info-bloc {
+    flex: 1 1 100%; /* sur petit écran, un bloc par ligne */
+    max-width: none;
+  }
 }
 
 .info-bloc h3 {
