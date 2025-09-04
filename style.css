@@ -87,7 +87,7 @@ nav a {
   margin-top: 40px;  /* espace avec les produits */
   font-size: 18px;   /* taille lisible */
 }
-..info-jeunes {
+.info-jeunes {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -95,24 +95,16 @@ nav a {
 }
 
 .info-bloc {
-  flex: 0 0 45%; /* chaque bloc prend 45% de la largeur */
-  max-width: 220px; /* limite la taille pour pas trop étirer */
+  flex: 0 0 45%;
+  max-width: 220px;
   background-color: rgba(0,0,0,0.4);
   padding: 15px;
   border-radius: 10px;
-  color: #8B0000; /* rouge foncé */
+  color: #8B0000;
   text-align: center;
-  margin: 10px 5px; /* petit espace entre les colonnes et lignes */
+  margin: 10px 5px;
 }
 
-/* On retire le media query pour mobile pour gard
-
-@media screen and (max-width: 600px) {
-  .info-bloc {
-    flex: 1 1 100%; /* sur petit écran, un bloc par ligne */
-    max-width: none;
-  }
-}
 
 .info-bloc h3 {
   margin-bottom: 10px;
