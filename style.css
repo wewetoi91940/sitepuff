@@ -9,7 +9,7 @@ body {
 
 /* Header */
 header {
-  background:#transparent;
+  background: transparent;  /* plus de noir */
   color: #fff;
   padding: 15px;
   text-align: center;
