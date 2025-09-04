@@ -87,6 +87,33 @@ nav a {
   margin-top: 40px;  /* espace avec les produits */
   font-size: 18px;   /* taille lisible */
 }
+.info-jeunes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.info-bloc {
+  background-color: rgba(0, 0, 0, 0.3); /* léger fond pour détacher du site */
+  padding: 20px;
+  border-radius: 12px;
+  color: #b30000; /* rouge foncé qui va avec ton fond */
+  flex: 1 1 220px; /* responsive, minimum 220px par bloc */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.info-bloc h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.info-bloc p {
+  font-size: 16px;
+}
 
 /* Boutons */
 button {
