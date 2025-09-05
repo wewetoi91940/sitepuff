@@ -47,4 +47,31 @@
       console.error('Erreur de chargement du modèle :', error);
     }
   );
+
+const secretBloc = document.getElementById('secret-bloc');
+let clicks = 0;
+
+// Créer le bouton mais le cacher au départ
+const btn = document.createElement('button');
+btn.textContent = "Accéder au secret";
+btn.style.display = 'none';
+btn.style.marginTop = '10px';
+secretBloc.appendChild(btn);
+
+// Au clic sur le bloc
+secretBloc.addEventListener('click', () => {
+  clicks++;
+  if(clicks === 5) {
+    btn.style.display = 'block';
+  }
+});
+
+// Au clic sur le bouton, on montre la section secrète
+btn.addEventListener('click', () => {
+  document.getElementById('secret-section').style.display = 'block';
+  document.getElementById('secret-section').scrollIntoView({ behavior: 'smooth' });
+});
+
+
+
 </script>
