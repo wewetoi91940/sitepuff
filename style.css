@@ -129,3 +129,13 @@ button:hover {
   transform: scale(1.05);
   background: gray;
 }
+
+#secret-section {
+  background-color: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  margin: 30px auto;
+  max-width: 600px;
+}
